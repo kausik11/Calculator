@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 500px;
+    
+    margin: 4% auto;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    user-select: none;
+}
+.calculator{
+    padding: 20px;
+    /* background-color: rgb(239, 238, 237); */
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+.input{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+   padding-right: 15px;
+   padding-left: 5px;
+   padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.input:hover{
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.operators{
+    display: flex;
+    width: 100%;
+    max-height: 70px;
+}
+.operators div{
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0px;
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .2s ease;
+}
+.operators div:hover{
+    background-color: #bbb;
+    border-color: #aaa;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+.operators div:active{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.leftPanel{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:stretch;
+    height: 50vh;
+    flex-grow: 2;
+    gap: 10px;
+}
+.leftPanel .numbers:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    flex-grow: 0.3;
+  
+}
+.leftPanel .numbers div{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 60px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+
+
+}
+.leftPanel .numbers:nth-child(2){
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.3;
+}
+.leftPanel .numbers:nth-child(3){
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.3;
+}
+.leftPanel .equal{
+    background-color: #307CF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: white;
+}
+.leftPanel .numbers div:hover{
+    background-color: #bbb;
+    border-color: #aaa;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.leftPanel .numbers div:active{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+.rightPanel:hover{
+    background-color: #307CF9;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+}
+.rightPanel:active{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
